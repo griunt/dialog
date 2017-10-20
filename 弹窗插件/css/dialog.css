@@ -1,0 +1,70 @@
+.dialogBack{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  z-index: 999;
+  display: none;
+}
+#dialogMain{
+  position: relative;
+  margin: 60px auto;
+  width: 500px;
+  background: white;
+  z-index: 1000;
+  box-shadow: inset 0 0 1em gold,0 0 1em gold;
+  display: none;
+}
+#dialogMain div{
+padding: 16px;
+font-family: Microsoft YaHei !important;
+}
+
+.dialogHead{
+  font-size: 19px;
+}
+.dialogBody{
+  font-size: 16.5px;
+}
+.dialogHead h5{
+  margin: 0;
+  display: inline-block;
+}
+.dialogBody{
+  margin: 0;
+  text-indent: 1.5em;
+}
+.dialogHead,.dialogBody{
+  border-bottom: 1px solid #d5c7c7;
+}
+@media (max-width:680px) {
+  #dialogMain{
+    width: auto;
+    margin: 60px auto;
+  }
+}
+.dialogFoot{
+  text-align: right;
+}
+.btn {
+  background: #3498db;
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  font-family: Microsoft YaHei;
+  color: #ffffff;
+  font-size: 12.7px;
+  padding: 8px 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
